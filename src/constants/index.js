@@ -129,6 +129,7 @@
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
+      icon: 'reactjs.png'
     },
     {
       title: "React Native Developer",
@@ -142,6 +143,7 @@
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
+      icon: 'redux.png'
     },
     {
       title: "Web Developer",
@@ -155,6 +157,7 @@
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
+      icon: 'shopify.png'
     },
     {
       title: "Full stack Developer",
@@ -168,6 +171,7 @@
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
+      icon: 'meta.png'
     },
   ];
   
