@@ -42,24 +42,24 @@
     },
   ];
   
-  // const services = [
-  //   {
-  //     title: "Web Developer",
-  //     icon: web,
-  //   },
-  //   {
-  //     title: "React Native Developer",
-  //     icon: mobile,
-  //   },
-  //   {
-  //     title: "Backend Developer",
-  //     icon: backend,
-  //   },
-  //   {
-  //     title: "Content Creator",
-  //     icon: creator,
-  //   },
-  // ];
+  const services = [
+    {
+      title: "Web Developer",
+      icon: 'web.png',
+    },
+    {
+      title: "React Native Developer",
+      icon: 'mobile.png',
+    },
+    {
+      title: "Backend Developer",
+      icon: 'backend.png',
+    },
+    {
+      title: "Content Creator",
+      icon: 'creator.png',
+    },
+  ];
   
   // const technologies = [
   //   {
@@ -264,4 +264,4 @@
     },
   ];
   
-  export {experiences, testimonials, projects, navLinks };
+  export {services, experiences, testimonials, projects, navLinks };

@@ -33,7 +33,7 @@ const App = () => {
           <Navbar isMobile={isMobile}/>
           <Hero isMobile={isMobile}/>
         </div>
-        <About />
+        <About isMobile={isMobile}/>
         <Experience />
         <Tech />
         <Works />

@@ -6,7 +6,7 @@ import { ComputersCanvas } from './canvas'
 const Hero = ({ isMobile }) => {
 
   return (
-    <section id="hero" className="relative w-full h-screen mx-auto mt-[-50px] mb-[0px]">
+    <section id="hero" className={isMobile ?"relative w-full h-screen mx-auto mt-[-50px] mb-[0px]" :"relative w-full h-screen mx-auto mt-[-100px] mb-[0px]"}>
       {/* inset-0 is for the text that we will be writing */}
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className='flex flex-col items-center justify-center mt-5'>
