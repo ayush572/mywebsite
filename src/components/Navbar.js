@@ -3,7 +3,7 @@ import {styles} from '../styles'
 import {navLinks} from '../constants/index.js'
 import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({isMobile}) => {
   const [active, setActive]=useState('')
   const [toggle, setToggle]=useState(false)
   useEffect(()=>{
@@ -19,7 +19,7 @@ const Navbar = () => {
           window.scrollTo(0, 0)
         }}>
           
-          <img src="logo.jpeg" alt="logo" className="w-12 h-12 object-cover" style={{width: '80px', height: '80px', borderRadius: '100%'}}/>
+          <img src="logo.jpeg" alt="logo" className="w-12 h-12 object-cover" style={isMobile ? {width: '60px', height: '60px', borderRadius: '100%'}:{width: '80px', height: '80px', borderRadius: '100%'}}/>
           <div>
           <p className='text-white text-[24px] font-bold cursor-pointer'>Ayush Daga </p>
           <span className='sm:block hidden'>Software Developer | Tech Enthusiast</span>
