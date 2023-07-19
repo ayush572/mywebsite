@@ -221,7 +221,7 @@
           color: "pink-text-gradient",
         },
       ],
-      
+      image: 'carrent.png',
       source_code_link: "https://github.com/",
     },
     {
@@ -242,7 +242,7 @@
           color: "pink-text-gradient",
         },
       ],
-      
+      image: 'jobit.png',
       source_code_link: "https://github.com/",
     },
     {
@@ -263,7 +263,7 @@
           color: "pink-text-gradient",
         },
       ],
-      
+      image: 'tripguide.png',
       source_code_link: "https://github.com/",
     },
   ];
