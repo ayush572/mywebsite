@@ -14,8 +14,37 @@ const Contact = ({isMobile}) => {
     message: ''
   })
   const [loading, setLoading] = useState(false)
-  const handleChange = (e) => {}
-  const handleSubmit = (e) => {}
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setForm({...form,[name]:value}) //means, we update the form and setForm qual to an object 
+
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send('service_vezglen', 'template_a31a6ej',{
+      from_name : form.name,
+      to_name : 'Ayush',
+      from_email : form.email,
+      to_email : 'ayushdagaeinstein@gmail.com',
+      message : form.message
+    },
+    'ADlyTiJjgYKJWz3kO'
+    ).then(()=>{
+      setLoading(false)
+      alert('Thank you! I`ll get back to you as soon as possible!')
+      setForm({
+        name: '',
+        email: '',
+        message: ''
+      },(error)=>{
+        setLoading(false)
+        console.log(error)
+        alert('Whoops! Something went wrong')
+      })
+    })
+
+  }
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       {/* form is also going to be animated and will be sliding from left side */}
@@ -24,7 +53,7 @@ const Contact = ({isMobile}) => {
         <h3 className={styles.sectionHeadText}>Contact</h3>
         <form
         ref={formRef}
-        onSubmit={()=>handleSubmit}
+        onSubmit={handleSubmit}
         className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
@@ -51,7 +80,7 @@ const Contact = ({isMobile}) => {
             
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4'></span>Let's get in touch?
             <textarea
             rows="7"
             type="text"
