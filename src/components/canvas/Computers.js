@@ -17,7 +17,7 @@ const Computers = ({isMobile}) => {
       shadow-mapSize={1024}/>
 
       {/* this primitive is the actual object */}
-      <primitive object={computer.scene} scale={isMobile ? 0.4: 0.75} position={isMobile?[-1,-1,-0.5]:[0,-3.25,-1.5]} rotation={[-0.01,-0.2,-0.1]}/>
+      <primitive object={computer.scene} scale={isMobile ? 0.4: 0.75} position={isMobile?[-1,-1,-0.5]:[0,-4.0,-1.5]} rotation={[-0.01,-0.2,-0.1]}/>
     </group>
   );
 };
@@ -29,6 +29,7 @@ const ComputersCanvas = ({isMobile}) => {
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      style={{marginTop: '100px'}}
     >
       <Suspense fallback={Loader}>
         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
