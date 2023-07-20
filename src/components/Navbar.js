@@ -14,7 +14,7 @@ const Navbar = ({isMobile}) => {
       className={`${styles.paddingX} w-full items-center py-5 top-0 bg-primary fixed z-10`}
     >
       <div className='flex flex-row justify-evenly items-center mx-auto'>
-        <div className={isMobile ? 'flex flex-row gap-5':'flex flex-row gap-10'}>
+        <div className={isMobile ? 'flex flex-row gap-8':'flex flex-row gap-10'}>
         <Link to="/" className='flex items-center gap-5' onClick={()=>{
           setActive("")
           window.scrollTo(0, 0)
@@ -23,8 +23,8 @@ const Navbar = ({isMobile}) => {
           <img src="logo.jpeg" alt="logo" className="w-12 h-12 object-cover" style={isMobile ? {width: '60px', height: '60px', borderRadius: '100%'}:{width: '80px', height: '80px', borderRadius: '100%', marginRight: '0px'}}/>
           </Link>
           <div>
-          <p className='text-white text-[24px] font-bold cursor-pointer text-center mt-[10px]'>Ayush Daga </p>
-          <span><a href='https://www.linkedin.com/in/ayush-daga-5218421b8/' target='_blank' style={{cursor: 'pointer'}}>Linkedin</a> | <a href='https://github.com/ayush572' target='_blank' style={{cursor: 'pointer'}}>Github</a> | <a href='https://leetcode.com/ayushdagaeinstein/' target='_blank' style={{cursor: 'pointer'}}>Leetcode</a></span>
+          <p className={isMobile?'text-white text-[18px] font-bold cursor-pointer text-center mt-[10px]':'text-white text-[24px] font-bold cursor-pointer text-center mt-[10px]'}>Ayush Daga </p>
+          <span style={isMobile ? {fontSize: '12px'}:{}}><a href='https://www.linkedin.com/in/ayush-daga-5218421b8/' target='_blank' style={{cursor: 'pointer'}}>Linkedin</a> | <a href='https://github.com/ayush572' target='_blank' style={{cursor: 'pointer'}}>Github</a> | <a href='https://leetcode.com/ayushdagaeinstein/' target='_blank' style={{cursor: 'pointer'}}>Leetcode</a></span>
           
           </div>
           </div>
