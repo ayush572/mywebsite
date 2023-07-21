@@ -82,7 +82,6 @@
       name: "Javascript",
       icon: "javascript.png",
     },
-    
     {
       name: "React JS",
       icon: "reactjs.png",
@@ -108,8 +107,8 @@
       icon: "nodejs.png",
     },
     {
-      name: "firebase",
-      icon: "firebase.png",
+      name: "JWT",
+      icon: "jwt.png",
     },
     {
       name: "SQL",
@@ -120,10 +119,49 @@
       icon: "mongodb.png",
     },
     {
+      name: "Socket.io",
+      icon: "socket.png",
+    },
+    {
+      name: "Three JS",
+      icon: "threejs.png",
+    },
+    {
+      name: "LeafletJS",
+      icon: "leaflet.png",
+    },
+    {
+      name: "firebase",
+      icon: "firebase.png",
+    },
+    {
+      name: "opencv",
+      icon: "opencv.png",
+    },
+    {
       name: "TensorFlow",
       icon: "tensorflow.png",
     },
-    
+    {
+      name: "Numpy",
+      icon: "numpy.png",
+    },
+    {
+      name: "Pandas",
+      icon: "pandas.png",
+    },
+    {
+      name: "Guice",
+      icon: "guice.png",
+    },
+    {
+      name: "antlr",
+      icon: "antlr.png",
+    },
+    {
+      name: "Remix",
+      icon: "remix.png",
+    },
     {
       name: "Web3JS",
       icon: "web3.png",
@@ -133,16 +171,24 @@
       icon: "etherjs.png",
     },
     {
+      name: "ipfs",
+      icon: "ipfs.png",
+    },
+    {
+      name: "Filecoin",
+      icon: "filecoin.png",
+    },
+    {
+      name: "Metamask",
+      icon: "metamask.png",
+    },
+    {
       name: "hardhat",
       icon: "hardhat.png",
     },
     {
       name: "truffle",
       icon: "truffle.png",
-    },
-    {
-      name: "LeafletJS",
-      icon: "leaflet.png",
     },
     {
       name: "git",
@@ -216,7 +262,7 @@
       company_name: "Wells Fargo",
       
       iconBg: "white",
-      date: "May 2022 - Jul 2022",
+      date: "May 2023 - Jul 2023",
       points: [
         "Here I was involved on solving the currently existing problem with the PnL system implementation",
         "Developed a basic prototype which makes the currently system being implemented more efficient in terms of development, resilency, scalability as well as reducing the latency for the system overhead and communication",
@@ -255,67 +301,193 @@
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "BlockBaazar",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Built the decentralized ecommerce market from where people can buy items, not just limited to physical objects but digital objects as well. •Only the owner will have the access to list the items on the website store for purchase." ,
       tags: [
         {
-          name: "react",
+          name: "Hardhat",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Pinata",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Solidity",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Etherjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "IPFS",
           color: "pink-text-gradient",
         },
       ],
       image: 'carrent.png',
       source_code_link: "https://github.com/",
+      where: 'personal'
     },
     {
-      name: "Job IT",
+      name: "Phantom Rooms",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "We know that in today's time, all the services that the clients are getting are on the cost of their data leakage to the service provider. Even if we consider a simple Whatsapp application, you are able to use it's service at the cost of your data loss. We understand that the data is the key to everything in today's time, so we developed a chatting web application, where the users can find their rooms of interest and can chat with the people of their interest without any data leakage, by using sessionStorage for the same and it gets destroyed onve the user closes it's web browser.",
       tags: [
         {
-          name: "react",
+          name: "EJS",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Javascript",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "GIT",
           color: "pink-text-gradient",
         },
-      ],
-      image: 'jobit.png',
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
         {
-          name: "nextjs",
+          name: "Socket.io",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Expressjs",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Figma",
           color: "pink-text-gradient",
         },
       ],
       image: 'tripguide.png',
       source_code_link: "https://github.com/",
+      where: 'hackathon'
+    },
+    {
+      name: "Metaverse Project",
+      description:
+        "We have seen blockchain connecting to NFT's and being used for the transaction purpose as well and it even forms a strong foundation in the development of Metaverse, but how to integrate the blockchain with the objects of Metaverse? How can we actually justify the ownership of assets in the metaverse without blockchain but for that, we need to connect blockchain with the assets of metaverse and that's what I have done here. I have connected the blockchain with the assets of metaverse being developed in real time.",
+      tags: [
+        {
+          name: "Solidity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Threejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Bootstrap",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: 'jobit.png',
+      source_code_link: "https://github.com/",
+      where: 'personal'
+    },
+    
+    {
+      name: "Museum Artifact Marketplace",
+      description:
+        "This application aims to provide security and support to archaeologists by helping them protecting their discoveries using the power of blockchain technology as now they can register their asset under any one museum which they wish to, and once registered, their discovery will then remain intact and no one will be able to manipulate the data. It is also integrated with AR compatible 3D models, so that once registered, any people can view the same from any part of the world and can even donate for any of the artifact for keeping it safe, protected and taking good care of it.",
+      tags: [
+        {
+          name: "Solidity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Reactjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Metamask",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Hardhat",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Replit",
+          color: "green-text-gradient",
+        },
+        {
+          name: "FileCoin",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "NFT.Storage",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Echo3D",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Etherjs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: 'tripguide.png',
+      source_code_link: "https://github.com/",
+      where: 'hackathon'
+    },
+    {
+      name: "House Price Prediction",
+      description:
+        "This project predicts the price of the house in a particular area, by predicting the same using the Linear Regressino model. The model has been trained on various parameters and provides an accurate prediction with an R2 score of 99.7%",
+      tags: [
+        {
+          name: "Google Colab",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Numpy",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Pandas",
+          color: "blue-text-gradient",
+        }
+      ],
+      image: 'tripguide.png',
+      source_code_link: "https://github.com/",
+      where: 'personal'
+    },
+    {
+      name: "Food Calorie Prediction",
+      description:
+        "This project predicts the type of food item among various training models provided to it and produces the calorie outcome of a particular food item based on which type of food it is. It will help the user to keep track of the amount of calorie that he is consuming and will help to keep a control over it.",
+      tags: [
+        {
+          name: "Google Colab",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "OpenCV",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Tensorflow",
+          color: "blue-text-gradient",
+        }
+      ],
+      image: 'tripguide.png',
+      source_code_link: "https://github.com/",
+      where: 'personal'
     },
   ];
   

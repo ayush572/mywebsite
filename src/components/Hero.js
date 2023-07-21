@@ -1,10 +1,8 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { Loader } from '@react-three/drei';
+import { ComputersCanvas } from './canvas';
 
-// Wrap the ComputersCanvas component with React.lazy
-const ComputersCanvas = React.lazy(() => import('./canvas/Computers'));
 
 const Hero = ({ isMobile }) => {
   const roles = [
@@ -15,22 +13,31 @@ const Hero = ({ isMobile }) => {
     "AI-ML Developer",
   ];
 
-  const [textIndex, setTextIndex] = useState(0);
+  const [currentText, setCurrentText] = useState(roles[0]);
+  const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTextIndex((prevIndex) => (prevIndex + 1) % roles.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [roles.length]);
+      setIsFadingOut(true); // Start fading out
+      setTimeout(() => {
+        setCurrentText((prevText) => {
+          const currentIndex = roles.indexOf(prevText);
+          const nextIndex = (currentIndex + 1) % roles.length;
+          return roles[nextIndex];
+        });
+        setIsFadingOut(false); // Start fading in after the text changes
+      }, 500); // Delay before fading in (adjust as needed)
+    }, 3000); // Change text every 3 seconds (3000ms)
 
-  const currentText = roles[textIndex];
+    return () => clearInterval(interval); // Clear the interval when the component unmounts
+  }, []);
 
   return (
     <section
       id="hero"
       className={isMobile ? "relative w-full h-[1000px] mx-auto mt-[-100px] mb-[0px]" : "relative w-full h-screen mx-auto mt-[-120px] mb-[0px]"}
     >
+      {/* inset-0 is for the text that we will be writing */}
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -44,20 +51,18 @@ const Hero = ({ isMobile }) => {
           </p>
           <h1
             className={`${styles.heroHeadText} text-white`}
-
+            
           >
             I'm a <span className='text-[#915eff]' style={{
-              opacity: isMobile ? 1 : textIndex % 2 === 0 ? 0 : 1,
+              opacity: isFadingOut ? 0 : 1,
               transition: 'opacity 0.5s ease-in-out', // Smooth fading transition
             }}>{currentText}</span>
           </h1>
         </div>
       </div>
-
-      <Suspense fallback={<Loader />}>
-        <ComputersCanvas isMobile={isMobile} />
-      </Suspense>
-
+      
+      <ComputersCanvas isMobile={isMobile} />
+      
       <div className={isMobile ? 'absolute top-[600px] flex w-full justify-center' : 'absolute bottom-0 flex w-full justify-center'}>
         <a href='#about'>
           <div className='w-[32px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-end p-2'>
