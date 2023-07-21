@@ -1,6 +1,6 @@
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 import Loader from '../../components/Loader';
 
 const Computers = ({ isMobile }) => {
@@ -28,14 +28,13 @@ const ComputersCanvas = ({ isMobile }) => {
       frameloop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
       style={{ marginTop: '100px' }}
     >
+      <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
       <Suspense fallback={<Loader />}>
-        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
         <Computers isMobile={isMobile} />
       </Suspense>
-      <Preload all />
+      {/* <Preload all /> */}
     </Canvas>
   );
 };

@@ -6,7 +6,7 @@ const BallCanvas = React.lazy(() => import('./canvas/BallCanvas'));
 
 const Tech = () => {
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
+    <div className='flex flex-row flex-wrap justify-center gap-8'>
       {technologies.map((technology) => (
         <div className='w-18 h-18' key={technology.name}>
           {/* Use Suspense to handle the loading state */}

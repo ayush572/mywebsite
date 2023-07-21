@@ -15,24 +15,16 @@ const Hero = ({ isMobile }) => {
     "AI-ML Developer",
   ];
 
-  const [currentText, setCurrentText] = useState(roles[0]);
-  const [isFadingOut, setIsFadingOut] = useState(false);
+  const [textIndex, setTextIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsFadingOut(true); // Start fading out
-      setTimeout(() => {
-        setCurrentText((prevText) => {
-          const currentIndex = roles.indexOf(prevText);
-          const nextIndex = (currentIndex + 1) % roles.length;
-          return roles[nextIndex];
-        });
-        setIsFadingOut(false); // Start fading in after the text changes
-      }, 500); // Delay before fading in (adjust as needed)
-    }, 3000); // Change text every 3 seconds (3000ms)
+      setTextIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [roles.length]);
 
-    return () => clearInterval(interval); // Clear the interval when the component unmounts
-  }, []);
+  const currentText = roles[textIndex];
 
   return (
     <section
@@ -55,7 +47,7 @@ const Hero = ({ isMobile }) => {
 
           >
             I'm a <span className='text-[#915eff]' style={{
-              opacity: isFadingOut ? 0 : 1,
+              opacity: isMobile ? 1 : textIndex % 2 === 0 ? 0 : 1,
               transition: 'opacity 0.5s ease-in-out', // Smooth fading transition
             }}>{currentText}</span>
           </h1>
