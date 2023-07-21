@@ -18,14 +18,7 @@ const Works = () => {
       <motion.p
       variants={fadeIn("","",0.1, 1)}
       className='mt-3 text-secondary text-[17px] max-w-7xl leading-[30px] text-justify'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Tellus in hac habitasse platea dictumst vestibulum. 
-      Tristique senectus et netus et malesuada. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Sollicitudin nibh sit amet commodo nulla. 
-      Commodo elit at imperdiet dui. Feugiat vivamus at augue eget arcu dictum varius duis at. Rhoncus mattis rhoncus urna neque viverra justo. 
-      Massa tempor nec feugiat nisl pretium fusce id velit ut. Bibendum neque egestas congue quisque egestas diam in arcu cursus. 
-      Ut tristique et egestas quis ipsum. Nisl nisi scelerisque eu ultrices vitae. Convallis posuere morbi leo urna molestie at elementum. 
-      Massa tincidunt nunc pulvinar sapien. Nulla facilisi nullam vehicula ipsum. Sed pulvinar proin gravida hendrerit lectus. 
-      Mi eget mauris pharetra et ultrices neque ornare aenean euismod.
+        Throught my journey, I have been able to build several project in various domains.
         </motion.p></div>  
         <div className='mt-20 flex flex-wrap gap-7'>
           {projects.map((project, index)=>(

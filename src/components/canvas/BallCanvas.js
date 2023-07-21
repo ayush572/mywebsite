@@ -2,6 +2,7 @@ import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei'
 import CanvasLoader from '../Loader'
+import LazyLoad from 'react-lazyload'
 
 const BallCanvas = ({icon}) => {
   const Ball = (props) => {
@@ -10,19 +11,17 @@ const BallCanvas = ({icon}) => {
       <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
         <ambientLight intensity={0.25} />
         <directionalLight position={[0, 0, 0.05]} />
-        <mesh castShadow receiveShadow scale={2.75}>
+        <mesh receiveShadow scale={2.75}>
           <icosahedronGeometry args={[1, 1]} />
           <meshStandardMaterial 
-          polygonOffset
           color="#fff8eb"
-          flatShading
           polygonOffsetFactor={-5}/>
           <Decal 
-          map={decal}
+          map={decal} 
           position={[0,0,1]}
           //by rotating it this way, it gets straight, otherwise it was showing its mirror image
           rotation={[2*Math.PI, 0, 6.25]}
-          flatShading
+          
           />
         </mesh>
       </Float>
@@ -30,6 +29,7 @@ const BallCanvas = ({icon}) => {
   }
 
   return (
+    <LazyLoad height={100} width={100} >
     <Canvas frameloop='demand' gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={CanvasLoader}>
         <OrbitControls enableZoom={false} />
@@ -37,6 +37,7 @@ const BallCanvas = ({icon}) => {
       </Suspense>
       <Preload all />
     </Canvas>
+    </LazyLoad>
   )
 }
 

@@ -44,63 +44,105 @@
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: 'web.png',
     },
     {
-      title: "React Native Developer",
+      title: "Java Developer",
       icon: 'mobile.png',
     },
     {
-      title: "Backend Developer",
-      icon: 'backend.png',
+      title: "Blockchain Developer",
+      icon: 'blockchain.png',
     },
     {
-      title: "Content Creator",
-      icon: 'creator.png',
-    },
+      title: "AI-ML Developer",
+      icon: 'aiml.png',
+    }
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
-      icon: 'html.png',
+      name: "C++",
+      icon: "cpp.png",
     },
     {
-      name: "CSS 3",
-      icon: "css.png",
+      name: "Python",
+      icon: "python.png",
     },
     {
-      name: "JavaScript",
+      name: "Solidity",
+      icon: "solidity.jpg",
+    },
+    {
+      name: "Java",
+      icon: "java.png",
+    },
+    {
+      name: "Javascript",
       icon: "javascript.png",
     },
-    {
-      name: "TypeScript",
-      icon: "typescript.png",
-    },
+    
     {
       name: "React JS",
       icon: "reactjs.png",
     },
     {
-      name: "Redux Toolkit",
-      icon: "redux.png",
+      name: "Next JS",
+      icon: "next.png",
     },
     {
       name: "Tailwind CSS",
       icon: "tailwind.png",
     },
     {
+      name: "BootStrap",
+      icon: "bootstrap.png",
+    },
+    {
+      name: "Material UI",
+      icon: "mui.png",
+    },
+    {
       name: "Node JS",
       icon: "nodejs.png",
+    },
+    {
+      name: "firebase",
+      icon: "firebase.png",
+    },
+    {
+      name: "SQL",
+      icon: "sql.png",
     },
     {
       name: "MongoDB",
       icon: "mongodb.png",
     },
     {
-      name: "Three JS",
-      icon: "threejs.png",
+      name: "TensorFlow",
+      icon: "tensorflow.png",
+    },
+    
+    {
+      name: "Web3JS",
+      icon: "web3.png",
+    },
+    {
+      name: "EtherJS",
+      icon: "etherjs.png",
+    },
+    {
+      name: "hardhat",
+      icon: "hardhat.png",
+    },
+    {
+      name: "truffle",
+      icon: "truffle.png",
+    },
+    {
+      name: "LeafletJS",
+      icon: "leaflet.png",
     },
     {
       name: "git",
@@ -110,68 +152,77 @@
       name: "figma",
       icon: "figma.png",
     },
-    {
-      name: "docker",
-      icon: "docker.png",
-    },
+    
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Frontend Developer",
+      company_name: "Academic Affairs Council, SVNIT",
+      
+      iconBg: "grey",
+      date: "Oct 2021 - Dec 2021",
+      points: [
+        "Developed the first all in one website for SVNIT students from where they can find a lot of stuffs and details",
+        "This had been the very first prototype website for the students where they can find career opportunites, competitive exams information as well as information about their own department like alumni and faculties.",
+        "Tech Stacks : HTML, CSS, Javascript, Figma, Reactjs",
+      ],
+      icon: 'svnit.png'
+    },
+    {
+      title: "Machine Learning Intern",
+      company_name: "IIRS (Indian Institute of Remote Sensing), ISRO",
       
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Jan 2022 - March 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked on Mask R-CNN deep learning algorithm for detection and instance segmentation of the images of the objects of interest taken from the satellite.",
+        "Worked on RFCN deep learning algorithm to detect and classify the images of objects of interest taken from the satellite.",
+        "Tech stacks : Python, Google Colab, Scikit-learn, Tensorflow, Keras"
       ],
-      icon: 'reactjs.png'
+      icon: 'isro.png'
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      title: "Web Development Intern",
+      company_name: "SriHari Capital LLC",
       
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Mar 2022 - May 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Designed the website from scratch on Figma.",
+        "Developed the designed website from scratch.",
+        "Used Solidity to write smart contracts on RemixIDE to mint NFT for the company.",
+        "Minted NFT for the company on Polygon Mumbai Testnet",
+        "Tech Stacks : Reactjs, MaterialUI, Solidity, Hardhat, Pinata",
       ],
-      icon: 'redux.png'
+      icon: 'srihari.png'
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Summer Research Intern",
+      company_name: "IIIT Hyderabad",
       
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      iconBg: "white",
+      date: "May 2022 - Jun 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Here I worked on creating an interactive data visualization on the website through the results obtained from the QGIS and Kepler.",
+        "Dealt with the CSV data analytics and converting the same through nodejs middleware, to store converted Geojson data into session storage",
+        "Visualized the data on the web using Leaflet.js",
+        "Tech Stacks : HTML, CSS, Javascript, Leaflet.js",
       ],
-      icon: 'shopify.png'
+      icon: 'iiith.png'
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "SDE Intern",
+      company_name: "Wells Fargo",
       
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      iconBg: "white",
+      date: "May 2022 - Jul 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Here I was involved on solving the currently existing problem with the PnL system implementation",
+        "Developed a basic prototype which makes the currently system being implemented more efficient in terms of development, resilency, scalability as well as reducing the latency for the system overhead and communication",
+        "Tech Stacks : Java, Socket Programming, Shell Scripting, ANTLR, Memory Mapped File, Multithreading, Google Guice, Uber Jar",
       ],
-      icon: 'meta.png'
+      icon: 'wf.png'
     },
   ];
   

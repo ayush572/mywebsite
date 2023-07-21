@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
+
 const Hero = ({ isMobile }) => {
   const roles = [
     "Programmer",
     "Software Developer",
-    "Web Developer",
+    "FullStack Developer",
     "Blockchain Developer",
-    "AI-ML Enthusiast",
+    "AI-ML Developer",
   ];
 
   const [currentText, setCurrentText] = useState(roles[0]);
@@ -59,8 +60,9 @@ const Hero = ({ isMobile }) => {
           </h1>
         </div>
       </div>
-
+      
       <ComputersCanvas isMobile={isMobile} />
+      
       <div className={isMobile ? 'absolute top-[600px] flex w-full justify-center' : 'absolute bottom-0 flex w-full justify-center'}>
         <a href='#about'>
           <div className='w-[32px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-end p-2'>

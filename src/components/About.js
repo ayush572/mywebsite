@@ -12,17 +12,25 @@ const About = ({isMobile}) => {
     <section className='p-[10px]'>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
       <motion.p variants={fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-7xl leading-30px text-justify'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Tellus in hac habitasse platea dictumst vestibulum. 
-      Tristique senectus et netus et malesuada. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Sollicitudin nibh sit amet commodo nulla. 
-      Commodo elit at imperdiet dui. Feugiat vivamus at augue eget arcu dictum varius duis at. Rhoncus mattis rhoncus urna neque viverra justo. 
-      Massa tempor nec feugiat nisl pretium fusce id velit ut. Bibendum neque egestas congue quisque egestas diam in arcu cursus. 
-      Ut tristique et egestas quis ipsum. Nisl nisi scelerisque eu ultrices vitae. Convallis posuere morbi leo urna molestie at elementum. 
-      Massa tincidunt nunc pulvinar sapien. Nulla facilisi nullam vehicula ipsum. Sed pulvinar proin gravida hendrerit lectus. 
-      Mi eget mauris pharetra et ultrices neque ornare aenean euismod.
+      Hi! I'm Ayush Daga, hailing from Ahmedabad, Gujarat. I realized my passion about the programming since grade 11th, 
+      when I was introduced with C++ programming language and solving DSA using that. Continuing my journey in school, I had to make a
+      project in grade 12th, related to any real world system that we would like to implement using plain C++ language.
+      So, I proceeded ahead and developed an <b>"Airline Reservation System"</b> using C++ as the final project for the school course
+      and I realized that I really enjoyed coding that out. I was really impressed with the project, how complex 
+      and deeper can I make the system, how the real world airline system would be working, and that became 
+      one of the <b>turning and triggering point</b> in my coding journey. Soon I started feeling that now,
+      even for a single day if I miss to code, I would really feel agitated as if some important 
+      part of my life has been separated from me. Ever since then, my passion for programming have been seen no stopping. 
+      
+      Then, after I passed out from my school, <b>"Delhi Public School Gandhinagar"</b>, securing a percentage of <b>"94.8%" in PCM + Computer Science</b> I 
+      and after giving the JEE Exam, I entered into one of the prestigious NIT's of the country, <b>"SVNIT Surat"</b>. 
+      In the college, I have been proactively involved about learning new technologies, participating in 
+      hackathaons as well as developing projects and gaining experiences through various internships as well. 
+      Wanna know more about me and what have I done so far.....? Go ahead and explore!!
+      
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index)=>(
