@@ -2,7 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { fadeIn } from '../utils/motion'
 
-const AwardCard = ({isMobile, index, testimonial, name, designation, company, image}) => {
+const AwardCard = ({isMobile, index, testimonial, name, designation, company, image, link}) => {
   return (
     <motion.div variants={fadeIn("","spring",index*0.5,0.75)}
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'>
@@ -11,8 +11,8 @@ const AwardCard = ({isMobile, index, testimonial, name, designation, company, im
         <div className='flex flex-1 flex-col-reverse justify-between items-left gap-1'>
             <div className='flex-1 flex flex-col'>
                 <p className='text-white font-medium text-[16px]'>
-                    <span
-                    className='blue-text-gradient'>@</span>{name}
+                    <a href={link} target='_blank'><span
+                    className='blue-text-gradient'>@</span>{name}</a>
                 </p>
                 <p className='mt-1 text-secondary text-[14px]'>
                     {designation} of {company}

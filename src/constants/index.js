@@ -45,6 +45,10 @@
       title: "Projects",
     },
     {
+      id: "awards",
+      title: "Achievement",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
