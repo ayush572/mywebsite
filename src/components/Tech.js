@@ -8,7 +8,7 @@ import { textVariant } from '../utils/motion';
 const BallCanvas = React.lazy(() => import('./canvas/BallCanvas'));
 
 const Tech = () => {
-  const batchSize = 7; // Number of BallCanvas components to load in each batch
+  const batchSize = 6; // Number of BallCanvas components to load in each batch
   const [startIdx, setStartIdx] = useState(0);
 
   // Function to load the next batch of BallCanvas components
