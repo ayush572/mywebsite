@@ -24,7 +24,7 @@ const Navbar = ({isMobile}) => {
           </Link>
           <div>
           <p className={isMobile?'text-white text-[18px] font-bold cursor-pointer text-center mt-[10px]':'text-white text-[24px] font-bold cursor-pointer text-center mt-[10px]'}>Ayush Daga </p>
-          <span style={isMobile ? {fontSize: '12px'}:{}}><a href='https://www.linkedin.com/in/ayush-daga-5218421b8/' target='_blank' style={{cursor: 'pointer'}}>Linkedin</a> | <a href='https://github.com/ayush572' target='_blank' style={{cursor: 'pointer'}}>Github</a> | <a href='https://leetcode.com/ayushdagaeinstein/' target='_blank' style={{cursor: 'pointer'}}>Leetcode</a></span>
+          <span className='text-secondary' style={isMobile ? {fontSize: '12px'}:{}}><a href='https://www.linkedin.com/in/ayush-daga-5218421b8/' target='_blank' style={{cursor: 'pointer'}} className='hover:text-white'>Linkedin</a> | <a href='https://github.com/ayush572' target='_blank' style={{cursor: 'pointer'}} className='hover:text-white'>Github</a> | <a href='https://leetcode.com/ayushdagaeinstein/' target='_blank' style={{cursor: 'pointer'}} className='hover:text-white'>Leetcode</a></span>
           
           </div>
           </div>

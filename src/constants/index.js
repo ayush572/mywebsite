@@ -37,6 +37,14 @@
       title: "Work",
     },
     {
+      id: "tech",
+      title: "TechStacks",
+    },
+    {
+      id: "project",
+      title: "Projects",
+    },
+    {
       id: "contact",
       title: "Contact",
     },
@@ -275,27 +283,39 @@
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Selected among the top 100 XROS fellow from the pool of 10k+ applications pan India. Working towards development of Metaverse as well as integration of other features of blockchain. Working on solving problems and developing solutions and skills related to Blockchain development, Augmented Reality, Virtual Reality, Extended Reality, Website Development",
+      name: "Extended Reality Open Source Fellowship",
+      designation: "XROS'23 Fellow",
+      company: "Krifin",
+      image: "fellow.png",
+      link:'https://xrosfellowship.ficci.in/'
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Represented my college for the first time in the All India Inter NIT Lawn Tennis Tournament, where we were competed with several NIT's coming from across India and after a tough competition, we were able to bring back the trophy for the third position in the tournament.",
+      name: "All India Inter NIT Lawn Tennis Tournament",
+      designation: "Member",
+      company: "SVNIT SURAT Lawn Tennis Team",
+      image: "internit.png",
+      link:'https://www.linkedin.com/posts/media-cell-svnit-79204524b_svnit-won-bronze-medal-at-all-india-inter-activity-6999775855975514112-4Ert?utm_source=share&utm_medium=member_desktop'
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "I was elected as the President of the Prestigious Club of my college, which deals across various domains including Paramaarsh (Consulting Division), Yaantrika (Division for Coding), Finshaatra (Finance Division of the Club), Aantarak (Core science division dealing with electrical, mechanical, civil and other such domains). I was elected as the President of the club for the year 2022-23. During my tenure, i along with my teammates conducted several events and introduced even the newest and latest ones as well that included Blockchain development, AR/VR Development, Strategix 2.0 and 3.0 (Nationwide flagship event of the club), and other major events as well.",
+      name: "Cutting Edge Visionaries (CEV)",
+      designation: "President",
+      company: "CEV",
+      image: "cevpresident.png",
+      link:'https://cevgroup.org/team/core-team-2022-23-2/'
+    },
+    {
+      testimonial:
+        "I was the official member of the SVNIT Sports Council, where I was actively involved in various events that it conducted on individual basis as well as on tie-up basis as well. I was also actively involved in conduting the All India Inter NIT sports tournament that included participation of 500+ students from several NIT's in the fields of Cricket and Power Lifting. I worked with a team of only 50 members, and organized this major event of the college.",
+      name: "Sports Council",
+      designation: "Member",
+      company: "SVNIT SURAT Sports Council",
+      image: "sports.png",
+      link:'https://www.instagram.com/sports_svnit/'
     },
   ];
   
@@ -330,8 +350,8 @@
           color: "pink-text-gradient",
         },
       ],
-      image: 'carrent.png',
-      source_code_link: "https://github.com/",
+      image: 'blockbaazar.png',
+      source_code_link: "https://github.com/ayush572/Blockbaazar",
       where: 'personal'
     },
     {
@@ -364,14 +384,14 @@
           color: "pink-text-gradient",
         },
       ],
-      image: 'tripguide.png',
-      source_code_link: "https://github.com/",
+      image: 'phantomrooms.png',
+      source_code_link: "https://devfolio.co/projects/phantom-rooms-0a94",
       where: 'hackathon'
     },
     {
       name: "Metaverse Project",
       description:
-        "We have seen blockchain connecting to NFT's and being used for the transaction purpose as well and it even forms a strong foundation in the development of Metaverse, but how to integrate the blockchain with the objects of Metaverse? How can we actually justify the ownership of assets in the metaverse without blockchain but for that, we need to connect blockchain with the assets of metaverse and that's what I have done here. I have connected the blockchain with the assets of metaverse being developed in real time.",
+        "We have seen blockchain connecting to NFT's and being used for the transaction purpose as well and it even forms a strong foundation in the development of Metaverse, but how to integrate the blockchain with the objects of Metaverse? How can we actually justify the ownership of assets in the metaverse without blockchain but for that, we need to connect blockchain with the assets of metaverse and that's what I have done here. I have connected the blockchain with the assets of metaverse being developed in real time. ``NOTE`` : Currently the project is private because this is one of my special works and the efforts that I have made to achieve the same... If you want to know more about it, feel free to contact me!!",
       tags: [
         {
           name: "Solidity",
@@ -386,8 +406,8 @@
           color: "pink-text-gradient",
         },
       ],
-      image: 'jobit.png',
-      source_code_link: "https://github.com/",
+      image: 'metaverseproj.png',
+      source_code_link: "https://github.com/ayush572/Metaverse_proj",
       where: 'personal'
     },
     
@@ -433,14 +453,14 @@
           color: "pink-text-gradient",
         },
       ],
-      image: 'tripguide.png',
-      source_code_link: "https://github.com/",
+      image: 'museumartifact.jpeg',
+      source_code_link: "https://devfolio.co/projects/museum-artifact-marketplace-47d1",
       where: 'hackathon'
     },
     {
       name: "House Price Prediction",
       description:
-        "This project predicts the price of the house in a particular area, by predicting the same using the Linear Regressino model. The model has been trained on various parameters and provides an accurate prediction with an R2 score of 99.7%",
+        "This project predicts the price of the house in a particular area, by predicting the same using the Linear Regressino model. The model has been trained on various parameters and provides an accurate prediction with an R2 score of 0.9999999744784622",
       tags: [
         {
           name: "Google Colab",
@@ -459,8 +479,8 @@
           color: "blue-text-gradient",
         }
       ],
-      image: 'tripguide.png',
-      source_code_link: "https://github.com/",
+      image: 'houseprice.png',
+      source_code_link: "https://github.com/ayush572/House_price_prediction_model",
       where: 'personal'
     },
     {
@@ -483,10 +503,14 @@
         {
           name: "Tensorflow",
           color: "blue-text-gradient",
+        },
+        {
+          name: "Matplotlib",
+          color: "green-text-gradient",
         }
       ],
-      image: 'tripguide.png',
-      source_code_link: "https://github.com/",
+      image: 'foodcal.png',
+      source_code_link: "https://colab.research.google.com/drive/1Ow1Emj27u23cNYCSo6afu9QgdERZQ1A0?usp=sharing",
       where: 'personal'
     },
   ];
