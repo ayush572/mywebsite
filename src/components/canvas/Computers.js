@@ -5,6 +5,12 @@ import Loader from '../../components/Loader';
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
+
+  // Memoize the model to avoid unnecessary re-renders
+  const computerScene = useMemo(() => {
+    const scene = computer.scene.clone(true);
+    return scene;
+  }, [computer]);
   return (
     <group>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -16,7 +22,7 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <primitive object={computer.scene} scale={isMobile ? 0.4 : 0.75} position={isMobile ? [-1, -1, -0.5] : [0, -4.0, -1.5]} rotation={[-0.01, -0.2, -0.1]} />
+      <primitive object={computerScene} scale={isMobile ? 0.4 : 0.75} position={isMobile ? [-1, -1, -0.5] : [0, -4.0, -1.5]} rotation={[-0.01, -0.2, -0.1]} />
     </group>
   );
 };
